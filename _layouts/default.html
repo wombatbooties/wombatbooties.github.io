@@ -2,34 +2,30 @@
   <head>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <!-- css for navbar adjustment -->
+    <link rel="stylesheet" href="/css/navbar-fixed-top.css">
+    <!-- css for sticky footer -->
+    <link rel="stylesheet" href="/css/sticky-footer.css">
   </head>
 
   <body>
-
-  <!-- Wrapping content -->
-  <div id="wrap">
-
-    <div class="container">
-
-      <div class="header">
-	<ul class="nav navbar navbar-default pull-right">
-          <li><a href="/">home</a></li>
-	</ul>
-	<h3><a class= "text-muted" href="/">josh.broderson.org</a><h3>
-      </div><!-- /header -->
-
+    <div id ="wrap">
+    <div class="header">
+      <ul class="navbar navbar-default navbar-fixed-top">
+        <a class= "navbar-brand" href="/">josh.broderson.org</a>
+      </ul>
+    </div><!-- /header -->
       <div class="hero-unit">
 	{{ content }}
       </div> <!-- end main -->
-
-      <div class="footer">
-      </div><!-- end footer -->
-
-    </div> <!-- end container -->
-  
+    <div id="footer">
+      <div class="container">
+	<p class="text-muted credit">This site cobbled together by Josh Broderson</p>
+      </div>
+    </div><!-- end footer -->
+    </div>
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-
   </body>
 </html>
